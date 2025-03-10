@@ -32,7 +32,7 @@ a{
   @apply  text-blue-700 ;
 }
 p{
-  @apply  text-red-400 text-base hover:text-blue-700;
+  @apply  text-[#6C6C6C] text-base;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -134,6 +134,6 @@ h1,h2,h3,h4,h5,h6{
   animation: scroll 20s linear infinite;
 }
 
-.hover\\:pause:hover ul {
+.animation:hover ul{
   animation-play-state: paused;
 }

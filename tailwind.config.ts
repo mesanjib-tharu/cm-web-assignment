@@ -64,6 +64,9 @@ const config: Config = {
         custom1: '350', // Example custom weight
         custom2: '450', // Example custom weight
       },
+      stroke: {
+        lightGray: "#F5F5F5",
+      },
       boxShadow:{
         custom1: '0px 2px 40px 0px rgba(8,70,78,0.08)',
         custom2: '0px 0px 30px 0px rgba(8,73,81,0.06)',

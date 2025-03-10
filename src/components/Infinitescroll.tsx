@@ -13,7 +13,7 @@ type Props = {};
 
 const Infinitescroll = (props: Props) => {
   return (
-    <div className="flex overflow-hidden select-none gap-5 py-2 text-sm">
+    <div className="animation flex overflow-hidden select-none gap-5 py-2 text-sm">
       <ul className="flex min-w-full shrink-0 items-center justify-between gap-5 animate-scroll px-0 py-10">
         <li>
           <GradianButton icon={SCRATCH2} label="SCRATCH" />
@@ -36,7 +36,7 @@ const Infinitescroll = (props: Props) => {
       </ul>
 
       <ul
-        className="flex min-w-full shrink-0 items-center justify-between gap-5 animate-scroll px-0 py-10"
+        className="flex min-w-full shrink-0 items-center justify-between gap-5 animate-scroll px-0 py-8"
         aria-hidden={true}
       >
         <li>

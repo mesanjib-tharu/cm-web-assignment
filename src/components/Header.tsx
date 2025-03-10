@@ -8,7 +8,7 @@ type Props = {}
 
 const Header = (props: Props) => {
   return (
-    <header className='sm:w-full px-[40px] py-[18px] shadow'>
+    <header className='sm:w-full px-[40px] py-[18px] border-t-[1px] border-b-[1px] border-solid border-t-[rgba(0,0,0,0.25)] border-b-[rgba(0,0,0,0.25)]'>
     {/* <div className="container mx-auto lg:relative flex flex-col lg:flex-row lg:justify-between gap-y-4 lg:pag-y-0"> */}
     <div className=" flex justify-between">
       
