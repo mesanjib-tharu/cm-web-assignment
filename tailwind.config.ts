@@ -67,6 +67,7 @@ const config: Config = {
       boxShadow:{
         custom1: '0px 2px 40px 0px rgba(8,70,78,0.08)',
         custom2: '0px 0px 30px 0px rgba(8,73,81,0.06)',
+        custom3: '0px 0px 30px 0px rgba(0, 0, 0, 0.25)' /** Header shadow */
       },
       backgroundImage:{
         services: 'url(../../assets/img/services/bg.svg',

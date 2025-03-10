@@ -25,7 +25,11 @@ html{
 }
 
 a{
-  @apply no-underline text-blue-500 text-base hover:text-blue-700;
+  /* @apply no-underline text-blue-500 text-base hover:text-blue-700; */
+  @apply no-underline cursor-pointer hover:text-blue-700;
+}
+.active{
+  @apply  text-blue-700 ;
 }
 p{
   @apply  text-red-400 text-base hover:text-blue-700;
@@ -53,7 +57,7 @@ h1,h2,h3,h4,h5,h6{
   @apply rounded-full uppercase tracking-[1.02px] flex items-center justify-center transition-all 
 }
 .btn-sm{
-  @apply py-[10px] px-[16px] rounded-[8px] 
+  @apply h-[39px] px-[16px] rounded-[8px] text-[20px]
 }
 
 .btn-md{
