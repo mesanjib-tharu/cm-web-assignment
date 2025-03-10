@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --font-size-xs: 0.75rem;
-  --font-size-sm: 0.875rem;
-  --font-size-base: 1rem;
-  --font-size-lg: 1.125rem;
-  --font-size-xl: 1.25rem;
-  --font-size-2xl: 1.5rem;
-  --font-size-3xl: 1.875rem;
-  --font-size-4xl: 2.25rem;
-  --font-size-5xl: 3rem;
+  --font-size-xs: 0.75rem; /*12px */
+  --font-size-sm: 0.875rem;  /*14px */
+  --font-size-base: 1rem; /*16px */
+  --font-size-lg: 1.125rem; /*12px */
+  --font-size-xl: 1.25rem; /*18px */
+  --font-size-2xl: 1.5rem; /*24px */
+  --font-size-3xl: 1.875rem; /*30px */
+  --font-size-4xl: 2.25rem;  /*36px */
+  --font-size-5xl: 3rem; /*48px */
 }
 
 *{
@@ -19,13 +19,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html{
   font-size: 16pt;
-}
-
-
-body{
-  @apply text-secondary text-[17px] leading-8;
 }
 
 a{
@@ -57,10 +53,15 @@ h1,h2,h3,h4,h5,h6{
   @apply rounded-full uppercase tracking-[1.02px] flex items-center justify-center transition-all 
 }
 .btn-sm{
-  @apply h-14 px-10;
+  @apply py-[10px] px-[16px] rounded-[8px] 
 }
+
+.btn-md{
+  @apply h-12 px-[30px] rounded-[16px] ;
+}
+
 .btn-lg{
-  @apply h-16 px-[50px]
+  @apply h-14 px-[20px] rounded-[20px]  text-[#383737];
 }
 .btn-accent{
   @apply bg-accent text-white hover:bg-accent-secondary
@@ -70,8 +71,13 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .btn-outline{
-  @apply bg-transparent border border-accent text-secondary hover:bg-accent hover:border-transparent hover:text-white
+  @apply bg-transparent border border-[#1259E9] text-[#1259E9] hover:bg-[#1259E9] hover:border-transparent hover:text-white
 }
+
+.btn-primary{
+  @apply bg-[#0f57e9] border border-[#1259E9] text-white hover:bg-transparent hover:border-[#0f57e9] hover:text-[#0f57e9]
+}
+
 
 .input,.select{
   @apply w-full rounded-[10px] h-[66px] outline-none border border-[#dbdfdf]
