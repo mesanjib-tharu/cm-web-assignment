@@ -38,7 +38,7 @@ const config: Config = {
             a: {
               textDecoration: 'none', // Remove underline
               color: '#3b82f6', // Set custom color (e.g., Tailwind's blue-500)
-              fontSize: '1rem', // Set custom font size
+              fontSize: '16px', // Set custom font size
               '&:hover': {
                 color: '#1d4ed8', // Change color on hover (e.g., Tailwind's blue-700)
               },

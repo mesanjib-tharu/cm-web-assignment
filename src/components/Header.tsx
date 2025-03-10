@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import Logo from "../assets/images/CM-logo.png"
-import Button from './Buttons';
+import { Button } from './Buttons';
 
 
 type Props = {}
@@ -20,7 +20,7 @@ const Header = (props: Props) => {
   
         <ul className='flex text-center items-center gap-4'>
           <li className='active'>
-            <a className="font-medium relative after:content-[''] after:absolute after:left-0 after:bottom-[-8px] after:w-[80%] after:h-[3px] after:bg-blue-600 after:scale-x-100">
+            <a className="text-[16px] font-medium relative after:content-[''] after:absolute after:left-0 after:bottom-[-8px] after:w-[80%] after:h-[3px] after:bg-blue-600 after:scale-x-100">
               Home
               </a>
           </li>
@@ -37,8 +37,8 @@ const Header = (props: Props) => {
 
 
       <div className='flex text-center items-center gap-4'>
-        <Button className={'btn btn-sm btn-outline  font-[20px]'} label={"Login"} />
-        <Button className={'btn btn-sm btn-primary  font-[20px] '} label={"Sign Up"}/>
+        <Button className={'btn btn-sm btn-outline  text-[16px]'} label={"Login"} />
+        <Button className={'btn btn-sm btn-primary  text-[16px] '} label={"Sign Up"}/>
       </div>
 
 
