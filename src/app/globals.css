@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 16pt;
+}
+
+
+body{
+  @apply text-secondary text-[17px] leading-8;
+}
+
+a{
+  @apply no-underline text-blue-500 text-base hover:text-blue-700;
+}
+p{
+  @apply  text-red-400 text-base hover:text-blue-700;
+}
+
+h1,h2,h3,h4,h5,h6{
+  @apply text-primary leading-[120%];
+}
+
+.h1{
+  @apply text-[36px] xl:text-[64px] font-semibold
+}
+
+.h2{
+  @apply text-[30px] xl:text-[44px] font-semibold capitalize tracking-[0.44px]
+}
+.h3{
+  @apply text-[20px] xl:text-[26px] font-semibold
+}
+.h4{
+  @apply text-[20px] xl:text-[26px] font-semibold capitalize
+}
+
+.btn{
+  @apply rounded-full uppercase tracking-[1.02px] flex items-center justify-center transition-all 
+}
+.btn-sm{
+  @apply h-14 px-10;
+}
+.btn-lg{
+  @apply h-16 px-[50px]
+}
+.btn-accent{
+  @apply bg-accent text-white hover:bg-accent-secondary
+}
+.btn-white{
+  @apply bg-white text-secondary hover:bg-white/90
+}
+
+.btn-outline{
+  @apply bg-transparent border border-accent text-secondary hover:bg-accent hover:border-transparent hover:text-white
+}
+
+.input,.select{
+  @apply w-full rounded-[10px] h-[66px] outline-none border border-[#dbdfdf]
+  text-secondary font-light placeholder:font-light placeholder:text-secondary
+}
+.input{
+  @apply px-4
+}
+.select{
+  @apply py-2 xl:py-[8px];
+}
+
+/* Swiper bullets  */
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullets,
+.swiper-pagination-horizontal.swiper-pagination-bullets  .swiper-pagination-bullet{
+    @apply bg-accent
+  }
+
+ /* faq */
+.faq__item.open .faq__answer{
+  @apply h-full
+}
+
+.mnav__close-btn-icon{
+  @apply bg-black px-[4px] rounded-tr-lg rounded-br-lg
+}
+
+
+/* Custom font sizes */
+.text-xs {
+  font-size: 0.75rem; /* 12px */
+}
+
+.text-sm {
+  font-size: 0.875rem; /* 14px */
+}
+
+.text-base {
+  font-size: 1rem; /* 16px */
+}
+
+.text-lg {
+  font-size: 1.125rem; /* 18px */
+}
+
+.text-xl {
+  font-size: 1.25rem; /* 20px */
+}
+
+.text-2xl {
+  font-size: 1.5rem; /* 24px */
+}
+
+.text-3xl {
+  font-size: 1.875rem; /* 30px */
+}
+
+.text-4xl {
+  font-size: 2.25rem; /* 36px */
+}
+
+.text-5xl {
+  font-size: 3rem; /* 48px */
+}
