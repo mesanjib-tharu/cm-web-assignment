@@ -4,6 +4,8 @@ import Header from '../components/Header'
 import HeroBanner from '../components/HeroBanner'
 import Infinitescroll from '../components/Infinitescroll'
 import Courses from '../components/Courses'
+import CTA1 from '../components/CTA1';
+
 export default function Home() {
   return (
       <>
@@ -11,6 +13,7 @@ export default function Home() {
       <HeroBanner />
       <Infinitescroll />
       <Courses />
+      <CTA1 />
       </>
   )
 }
