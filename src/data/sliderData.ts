@@ -193,3 +193,4 @@ export const benefits = [
             "After completing each course, students receive an official certification recognizing their achievements. This can be showcased in their academic portfolio, helping them stand out in school and future career opportunities.",
         },
       ];
+

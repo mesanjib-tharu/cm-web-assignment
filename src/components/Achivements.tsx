@@ -15,12 +15,11 @@ interface achimentProps {
 
 const Achivements = ({ items }: achimentProps) => {
   return (
-    <div className="">
-      <div className="flex  justify-between py-[30px] items-center text-start">
+      <div className="flex  justify-between px-[65px] py-[30px] items-center text-start">
         <div className="relative w-[557px] h-[515px] px-12">
-          <div className="absolute w-[386px] h-[386px] bg-[#d7dfef] top-[130px] left-[80px] rounded-3xl "></div>
+          <div className="absolute w-[386px] h-[386px] bg-[#d7dfef] top-[130px] left-[1px] rounded-3xl "></div>
           <Image
-            className="absolute  w-[490px] h-[497px] top-[20px] left-[80px] rounded-3xl"
+            className="absolute  w-[490px] h-[497px] top-[20px] left-[1px] rounded-3xl"
             src={karolina}
             alt="Lesson"
           />
@@ -57,7 +56,6 @@ const Achivements = ({ items }: achimentProps) => {
           ))}
         </div>
       </div>
-    </div>
   );
 };
 

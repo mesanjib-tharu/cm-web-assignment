@@ -7,7 +7,7 @@ import Courses from '../components/Courses';
 import CTA1 from '../components/CTA1';
 import  Achivement  from '../components/Achivements';
 import { benefits } from "../data/sliderData";
-
+import Works from '../components/Works';
 
 export default function Home() {
   return (
@@ -18,6 +18,7 @@ export default function Home() {
       <Courses />
       <CTA1 />
       <Achivement items={benefits}/>
+      <Works />
       </>
   )
 }
