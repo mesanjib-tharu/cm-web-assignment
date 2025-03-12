@@ -6,7 +6,7 @@ type Props = {};
 
 const Learning = (props: Props) => {
   return (
-    <div className="relative flex justify-center px-[65px]">
+    <div className="relative flex justify-center p-[65px]">
       <div className="w-full relative">
         <div className="absolute w-full h-full bg-[#0953E9] rounded-[32px] px-[168px] py-[70px]"></div>
         <div className="relative w-full h-[268px] flex justify-between">
