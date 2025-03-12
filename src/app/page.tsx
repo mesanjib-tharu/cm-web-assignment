@@ -1,10 +1,13 @@
-import Image from 'next/image'
-import Button from '../components/Buttons'
-import Header from '../components/Header'
-import HeroBanner from '../components/HeroBanner'
-import Infinitescroll from '../components/Infinitescroll'
-import Courses from '../components/Courses'
+import Image from 'next/image';
+import Button from '../components/Buttons';
+import Header from '../components/Header';
+import HeroBanner from '../components/HeroBanner';
+import Infinitescroll from '../components/Infinitescroll';
+import Courses from '../components/Courses';
 import CTA1 from '../components/CTA1';
+import  Achivement  from '../components/Achivements';
+import { benefits } from "../data/sliderData";
+
 
 export default function Home() {
   return (
@@ -14,6 +17,7 @@ export default function Home() {
       <Infinitescroll />
       <Courses />
       <CTA1 />
+      <Achivement items={benefits}/>
       </>
   )
 }
