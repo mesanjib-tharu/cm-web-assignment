@@ -11,7 +11,7 @@ const Testimonials = (props: Props) => {
         </h2>
 
 
-        <div className="flex justify-between gap-5 py-[65px]  w-full relative">
+        <div className="flex justify-between gap-5 py-[65px]  w-full h-[430px] relative">
             <div className='absolute top-7 left-[0px] w-[420px] border p-5 rounded-3xl '>
                 <Image src={Quatation} className='w-[24px] h-[24px]' />
                 <p>“My child absolutely enjoys the coding sessions! The classes are highly interactive and engaging, making learning fun and exciting.

@@ -82,10 +82,6 @@ const Works = () => {
           </div>
         </div>
       </div>
-
-{/* <div className="bg-red-300 w-[200px] h-[200px]">
-    red
-</div> */}
       <div className="relative  w-[400px] h-[400px]  px-12">
         <Image
           className="absolute w-[386px] h-[386px] inset-0 bg-[#d7dfef"

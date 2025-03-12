@@ -10,6 +10,7 @@ import { benefits } from "../data/sliderData";
 import Works from '../components/Works';
 import Learning from '../components/Learning';
 import Testimonials from '../components/Testimonials';
+import FAQ from '../components/FAQ';
 export default function Home() {
   return (
       <>
@@ -22,6 +23,7 @@ export default function Home() {
       <Works />
       <Learning />
       <Testimonials />
+      <FAQ />
       </>
   )
 }
