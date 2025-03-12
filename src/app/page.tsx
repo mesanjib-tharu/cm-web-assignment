@@ -8,7 +8,7 @@ import CTA1 from '../components/CTA1';
 import  Achivement  from '../components/Achivements';
 import { benefits } from "../data/sliderData";
 import Works from '../components/Works';
-
+import Learning from '../components/Learning';
 export default function Home() {
   return (
       <>
@@ -19,6 +19,7 @@ export default function Home() {
       <CTA1 />
       <Achivement items={benefits}/>
       <Works />
+      <Learning />
       </>
   )
 }
