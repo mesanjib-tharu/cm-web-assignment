@@ -194,3 +194,38 @@ export const benefits = [
         },
       ];
 
+
+export const footerSections = [
+        {
+          title: "Company",
+          links: [
+            { label: "Home", href: "/" },
+            { label: "About Us", href: "/about" },
+            { label: "Courses", href: "/courses" },
+            { label: "Careers", href: "/careers" },
+            { label: "Contact Us", href: "/contact" },
+            { label: "Blogs", href: "/blogs" },
+          ],
+        },
+        {
+          title: "Courses we provide?",
+          links: [
+            { label: "Scratch" },
+            { label: "Web Development" },
+            { label: "Python" },
+            { label: "Game Development" },
+            { label: "Robotics" },
+            { label: "AI/ML" },
+            { label: "Mathematics" },
+          ],
+        },
+      ];
+      
+export const contactInfo = {
+        title: "Get In Touch",
+        links: [
+          { label: "E-mail", href: "mailto:info@codemantra.io" },
+          { label: "Phone no.", href: "tel:+15719315701" },
+          { label: "Headquarter", label: "Reston VA, USA" },
+        ],
+      };

@@ -2,7 +2,9 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import 'remixicon/fonts/remixicon.css'; 
+import { footerSections,contactInfo } from "../data/sliderData";
 
+import Footer from '../components/Footer';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -26,6 +28,7 @@ export default function RootLayout({
         <div className='mx-auto w-[1440px] h-screen'>
 
         {children}
+        <Footer sections={footerSections} contactInfo={contactInfo}/>
         </div>
         </body>
     </html>
