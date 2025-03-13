@@ -22,7 +22,7 @@ const Sidebar: React.FC = () => {
   }, []);
 
   return (
-    <nav className="relative">
+    <nav className="relative z-40">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="text-black focus:outline-none md:hidden"
