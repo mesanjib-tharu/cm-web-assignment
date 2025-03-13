@@ -6,8 +6,9 @@ import Youtube from "../assets/images/logos_youtube-icon.png";
 import LinkedIn from "../assets/images/skill-icons_linkedin.png";
 
 type FooterLink = {
-  label: string;
-  href?: string;
+  label: string,
+  href?: string,
+  value?: string
 };
 
 type FooterSection = {
@@ -35,7 +36,7 @@ const Footer: React.FC<FooterProps> = ({ sections, contactInfo }) => {
                     {link.href}
                   </a>
                 ) : (
-                  link.label
+                  link.value
                 )}
               </p>
             </div>

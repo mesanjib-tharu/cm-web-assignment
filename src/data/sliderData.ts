@@ -224,8 +224,8 @@ export const footerSections = [
 export const contactInfo = {
         title: "Get In Touch",
         links: [
-          { label: "E-mail", href: "" },
-          { label: "Phone no.", href: "" },
-          { label: "Headquarter" , href:"" },
+          { label: "E-mail", href: "",value:"info@cademantra.io" },
+          { label: "Phone no.", href: "",value:"+ 1571-931-5701" },
+          { label: "Headquarter" , href:"" , value:"Reston VA, USA"},
         ],
       };
