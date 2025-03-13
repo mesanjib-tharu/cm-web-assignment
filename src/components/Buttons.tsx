@@ -25,8 +25,8 @@ export const Button = ({ className,label }: propsType) => {
 
 export const GradianButton = ({icon,label}:gradiantPropsType) => {
     return (
-        <div className='flex gap-4'>
-         <button className='btn btn-md text-[#383737] text-[20px] flex items-center gap-2 rounded-[32px] shadow-md  bg-[linear-gradient(180deg,_rgba(2,119,189,0.12)_0%,_rgba(235,235,235,1)_100%)] border border-[#E0E0E0]'>
+        <div className='md:flex flex-col gap-4'>
+         <button className='btn btn-md text-[#383737] md:text-[20px] text-[14px] flex items-center gap-2 rounded-[32px] shadow-md  bg-[linear-gradient(180deg,_rgba(2,119,189,0.12)_0%,_rgba(235,235,235,1)_100%)] border border-[#E0E0E0]'>
             <Image src={icon} alt={label} width={29} height={28} />
             {label?.toUpperCase()}
             </button>

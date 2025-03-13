@@ -58,11 +58,11 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .btn-sm{
-  @apply h-[39px] px-[16px] rounded-[8px] text-[16px]
+  @apply h-[30px] md:h-[39px] md:px-[16px] px-[8px] rounded-[8px] md:text-[16px] text-[12px]
 }
 
 .btn-md{
-  @apply h-12 px-[30px] rounded-[16px] ;
+  @apply  h-12 px-[30px] rounded-[16px] ;
 }
 
 .btn-lg{

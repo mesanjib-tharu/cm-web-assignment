@@ -1,87 +1,55 @@
 import React from "react";
 import Image from "next/image";
 import Group from "../assets/images/Group 86.png";
-import RightIcon from "../assets/images/RightIcon.png";
-import Register from "../assets/images/Register.png";
 import Laptop from "../assets/images/Laptop.png";
 import Calendar from "../assets/images/Calendar.png";
 import BiLaptop from "../assets/images/bi_laptop-fill.png";
 
-type Props = {
-  title: string;
-  icon: string;
-  description: string;
-};
-
-interface workProps {
-  items: Props[];
-}
-
 const Works = () => {
   return (
-    <div className="flex justify-between px-[65px] py-[28px]  items-center ">
-      <div className="flex flex-col gap-[21px] w-1/2  max-w-xl">
-        <h2 className="text-[36px] font-semibold leading-[160%] mb-[8px]">
+    <div className="flex flex-col lg:flex-row justify-between items-center px-6 sm:px-12 lg:px-[65px] py-10 gap-10">
+      <div className="flex flex-col gap-6 w-full lg:w-1/2 max-w-xl">
+        <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-semibold leading-[160%]">
           <span className="text-[#393939]">Here’s how it</span>{" "}
           <span className="text-blue-600">works</span>
           <span className="text-[#393939]">!</span>
         </h2>
-
-        <div className="bg-white rounded-xl p-4  shadow-[0px_-2px_128px_rgba(0,59,179,0.14)] flex gap-4 items-start">
-          <div className="w-[52px] p-1 h-[52] rounded-full bg-blue-500">
-            <Image
-              src={BiLaptop}
-              alt="Tick"
-              className=" p-1 flex-shrink-0 w-full h-full"
-            />
+        {[
+          {
+            icon: BiLaptop,
+            title: "Register",
+            desc: "Click on the Enroll button and complete your registration form.",
+          },
+          {
+            icon: Calendar,
+            title: "Choose Your Career",
+            desc: "Choose the best course for you.",
+          },
+          {
+            icon: Laptop,
+            title: "Start Learning",
+            desc: "You’re on the way to become a professional.",
+          },
+        ].map((step, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-xl p-4 shadow-lg flex gap-4 items-start"
+          >
+            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-500">
+              <Image src={step.icon} alt="Icon" className="w-6 h-6" />
+            </div>
+            <div>
+              <h3 className="font-semibold text-base sm:text-lg text-gray-800">
+                {step.title}
+              </h3>
+              <p className="text-sm sm:text-base text-gray-600 mt-1">
+                {step.desc}
+              </p>
+            </div>
           </div>
-
-          <div>
-            <h3 className="font-semibold text-[16px] text-gray-custom">
-              Register
-            </h3>
-            <p className="text-sm text-gray-600 mt-1">
-              Click on the Enroll button and complete your registration form.
-            </p>
-          </div>
-        </div>
-
-        <div className="bg-white rounded-xl p-4  shadow-[0px_-2px_128px_rgba(0,59,179,0.14)] flex gap-4 items-start">
-          <div className="w-[52px] p-1 h-[52] rounded-full bg-blue-500">
-            <Image
-              src={Calendar}
-              alt="Tick"
-              className="p-1 flex-shrink-0 w-full h-full"
-            />
-          </div>
-          <div>
-            <h3 className="font-semibold text-[16px] text-gray-custom">
-              Choose Your Career
-            </h3>
-            <p className="text-sm text-gray-600 mt-1">
-              Choose the best course for you.
-            </p>
-          </div>
-        </div>
-
-        <div className="bg-white rounded-xl p-4  shadow-[0px_-2px_128px_rgba(0,59,179,0.14)] flex gap-4 items-start">
-          <div className="w-[55px] p-1 h-[55px] rounded-full bg-blue-500">
-            <Image
-              src={Laptop}
-              alt="Tick"
-              className="p-1 flex-shrink-0 w-full h-full "
-            />
-          </div>
-          <div>
-            <h3 className="font-semibold text-[16px] text-gray-custom">
-              Start Learning
-            </h3>
-            <p className="text-sm text-gray-600 mt-1">
-              You’re on the way to become a professional personal.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
+
       <div className="relative  w-[400px] h-[400px]  px-12">
         <Image
           className="absolute w-[386px] h-[386px] inset-0 bg-[#d7dfef"

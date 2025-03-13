@@ -23,7 +23,7 @@ type FooterProps = {
 const Footer: React.FC<FooterProps> = ({ sections, contactInfo }) => {
   return (
     <footer className="w-full bg-gray-100 py-10 px-6 md:px-16 bg-[#E6E6E6]">
-      <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-3 sm:grid-cols-2 md:text-left">
+      <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-3 md:text-left">
         <div className="space-y-2">
           <h3 className="text-[24px] font-semibold">{contactInfo.title}</h3>
           {contactInfo.links.map((link, index) => (

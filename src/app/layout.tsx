@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className='mx-auto w-[1440px] h-screen'>
+        <div className='mx-auto md:w-[1440px] h-screen'>
 
         {children}
         <Footer sections={footerSections} contactInfo={contactInfo}/>

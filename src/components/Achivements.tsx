@@ -9,53 +9,56 @@ type Props = {
   description: string;
 };
 
-interface achimentProps {
+interface achivementProps {
   items: Props[];
 }
 
-const Achivements = ({ items }: achimentProps) => {
+const Achivements = ({ items }: achivementProps) => {
   return (
-      <div className="flex  justify-between px-[65px] py-[30px] items-center text-start">
-        <div className="relative w-[557px] h-[515px] px-12">
-          <div className="absolute w-[386px] h-[386px] bg-[#d7dfef] top-[130px] left-[1px] rounded-3xl "></div>
-          <Image
-            className="absolute  w-[490px] h-[497px] top-[20px] left-[1px] rounded-3xl"
-            src={karolina}
-            alt="Lesson"
-          />
-        </div>
+    <div className="flex flex-col md:flex-row justify-between items-center text-start px-6 md:px-16 py-10">
+      {/* Left Side (Image) */}
 
-        <div className="flex flex-col gap-[21px] w-1/2  max-w-xl">
-          <h2 className="text-[36px] font-semibold leading-[160%] mb-[8px]">
-            <span className="text-[#393939]">What Will You</span>{" "}
-            <span className="text-blue-600">Get</span>
-            <span className="text-[#393939]">?</span>
-          </h2>
-
-          {items.map((benefit, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-xl p-4  shadow-[0px_-2px_128px_rgba(0,59,179,0.14)] flex gap-4 items-start"
-            >
-              <Image
-                src={RightIcon}
-                alt="Tick"
-                width={52}
-                height={52}
-                className="flex-shrink-0"
-              />
-              <div>
-                <h3 className="font-semibold text-[16px] text-gray-custom">
-                  {benefit.title}
-                </h3>
-                <p className="text-sm text-gray-600 mt-1">
-                  {benefit.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
+      <div className="relative w-full max-w-lg md:w-1/2 px-6 hidden md:block">
+        <div className="absolute w-[70%] h-[70%] bg-[#d7dfef] top-24 left-0 rounded-3xl"></div>
+        <Image
+          className="relative w-full h-auto rounded-3xl"
+          src={karolina}
+          alt="Lesson"
+        />
       </div>
+
+      {/* Right Side (Text & Benefits) */}
+      <div className="flex flex-col gap-6 w-full md:w-1/2 max-w-xl mt-10 md:mt-0">
+        <h2 className="text-[28px] md:text-[36px] font-semibold leading-[160%]">
+          <span className="text-[#393939]">What Will You</span>{" "}
+          <span className="text-blue-600">Get</span>
+          <span className="text-[#393939]">?</span>
+        </h2>
+
+        {items.map((benefit, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-xl p-4 shadow-lg flex gap-4 items-start"
+          >
+            <Image
+              src={RightIcon}
+              alt="Tick"
+              width={40}
+              height={40}
+              className="flex-shrink-0"
+            />
+            <div>
+              <h3 className="font-semibold text-[16px] text-gray-800">
+                {benefit.title}
+              </h3>
+              <p className="text-sm text-gray-600 mt-1">
+                {benefit.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 

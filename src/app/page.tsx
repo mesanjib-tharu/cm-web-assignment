@@ -18,8 +18,8 @@ export default function Home() {
       <HeroBanner />
       <Infinitescroll />
       <Courses />
-      <CTA1 />
       <Achivement items={benefits}/>
+      <CTA1 />
       <Works />
       <Learning />
       <Testimonials />
