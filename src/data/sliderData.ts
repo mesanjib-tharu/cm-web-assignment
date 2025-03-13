@@ -224,8 +224,8 @@ export const footerSections = [
 export const contactInfo = {
         title: "Get In Touch",
         links: [
-          { label: "E-mail", href: "/contactus" },
-          { label: "Phone no.", href: "/contactus" },
-          { label: "Headquarter" , href:"/contactus" },
+          { label: "E-mail", href: "" },
+          { label: "Phone no.", href: "" },
+          { label: "Headquarter" , href:"" },
         ],
       };
