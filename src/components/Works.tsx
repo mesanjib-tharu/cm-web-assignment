@@ -59,7 +59,7 @@ const Works = () => {
         <div className="absolute w-[386px] h-[386px] inset-0 bg-opacity-75 rounded-3xl"></div>
 
         <div
-          class="absolute top-[250px] left-[250px]  w-[150px] h-[150px] bg-blue-600 rounded-tr-[20px] [clip-path:polygon(0%_100%,100%_100%,100%_0%)]
+          className="absolute top-[250px] left-[250px]  w-[150px] h-[150px] bg-blue-600 rounded-tr-[20px] [clip-path:polygon(0%_100%,100%_100%,100%_0%)]
       rounded-bl-[20px] 
       rounded-br-[10px] 
       "

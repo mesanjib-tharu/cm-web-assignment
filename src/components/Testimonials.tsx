@@ -12,7 +12,7 @@ const Testimonials = (props: Props) => {
 
       <div className="md:flex gap-5 flex-col justify-between  py-[65px]  w-full md:h-[430px] h-full md:relative">
         <div className="md:absolute md:top-7 md:left-[0px] w-[420px] border p-5 rounded-3xl ">
-          <Image src={Quatation} className="w-[24px] md:h-[24px]" />
+          <Image src={Quatation} className="w-[24px] md:h-[24px]" alt="image "/>
           <p>
             “My child absolutely enjoys the coding sessions! The classes are
             highly interactive and engaging, making learning fun and exciting.
@@ -24,7 +24,7 @@ const Testimonials = (props: Props) => {
         </div>
 
         <div className="md:absolute md:top-2 md:left-[450px] w-[420px] border p-5 rounded-3xl">
-          <Image src={Quatation} className="w-[24px] h-[24px]" />
+          <Image src={Quatation} className="w-[24px] h-[24px]" alt="image "/>
           <p>
             “My child absolutely enjoys the coding sessions! The classes are
             highly interactive and engaging, making learning fun and exciting.
@@ -36,7 +36,7 @@ const Testimonials = (props: Props) => {
         </div>
 
         <div className="md:absolute md:top-7 md:left-[900px] w-[420px] border p-5 rounded-3xl ">
-          <Image src={Quatation} className="w-[24px] h-[24px]" />
+          <Image src={Quatation} className="w-[24px] h-[24px]" alt="image "/>
           <p>
             “My child absolutely enjoys the coding sessions! The classes are
             highly interactive and engaging, making learning fun and exciting.

@@ -75,18 +75,22 @@ const Footer: React.FC<FooterProps> = ({ sections, contactInfo }) => {
           <Image
             src={Facebook}
             className="w-[40px] h-[40px] cursor-pointer hover:text-gray-900"
+             alt="Facebook Logo"
           />
           <Image
             src={Instagram}
             className="w-[40px] h-[40px] cursor-pointer hover:text-gray-900"
+             alt="Facebook Logo"
           />
           <Image
             src={LinkedIn}
             className="w-[28px] h-[28px] cursor-pointer hover:text-gray-900"
+             alt="Facebook Logo"
           />
           <Image
             src={Youtube}
             className="w-[43px] h-[30px] cursor-pointer hover:text-gray-900"
+             alt="Facebook Logo"
           />
         </div>
       </div>

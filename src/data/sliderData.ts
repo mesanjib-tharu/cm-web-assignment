@@ -210,13 +210,13 @@ export const footerSections = [
         {
           title: "Courses we provide?",
           links: [
-            { label: "Scratch" },
-            { label: "Web Development" },
-            { label: "Python" },
-            { label: "Game Development" },
-            { label: "Robotics" },
-            { label: "AI/ML" },
-            { label: "Mathematics" },
+            { label: "Scratch" ,href:"/schratch"},
+            { label: "Web Development", href:"/web-development" },
+            { label: "Python" , href:"/python"},
+            { label: "Game Development" , href:"/game-development"},
+            { label: "Robotics", href:"/robotics" },
+            { label: "AI/ML", href:"/ai" },
+            { label: "Mathematics", href:"/mathmatics" },
           ],
         },
       ];
@@ -224,8 +224,8 @@ export const footerSections = [
 export const contactInfo = {
         title: "Get In Touch",
         links: [
-          { label: "E-mail", href: "mailto:info@codemantra.io" },
-          { label: "Phone no.", href: "tel:+15719315701" },
-          { label: "Headquarter", label: "Reston VA, USA" },
+          { label: "E-mail", href: "/contactus" },
+          { label: "Phone no.", href: "/contactus" },
+          { label: "Headquarter" , href:"/contactus" },
         ],
       };
