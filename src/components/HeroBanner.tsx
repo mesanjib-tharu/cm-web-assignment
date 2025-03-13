@@ -16,7 +16,7 @@ const HeroBanner = () => {
       <div className="w-full pt-8">
         <div className="flex flex-col lg:flex-row justify-between bg-white bg-opacity-30 rounded-tl-2xl rounded-tr-2xl relative">
           <div className="flex flex-col items-start w-full lg:w-[50%] p-6 lg:p-10">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold z-50">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
               Empowering Young Minds <br /> with{" "}
               <span className="text-[#0953E9]">Future-Ready Skills!</span>
             </h1>
